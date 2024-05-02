@@ -1,0 +1,119 @@
+.cart{
+    margin:60px;
+}
+
+.cartitemstitle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color:grey;
+    font-size: max(1vw,12px);
+}
+
+.cartitem{
+    margin:10px 0px;
+    color:black;
+}
+
+.cartitem img{
+    width:60px;
+
+}
+
+.cart hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.cartitem .Cross{
+    cursor: pointer;
+}
+
+.cartbottom{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap:max(12vw,20px)
+}
+
+.carttota{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.carttotal{
+    display: flex;
+    justify-content: space-between;
+    color:#555;
+}   
+
+.carttota hr{
+    margin:10px 0px;
+}
+
+.carttota button{
+    border: none;
+    color:white;
+    background-color: tomato;
+    width:max(15vw,200px);
+    padding:12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.promo{
+    flex: 1;
+}
+.promo p{
+    color:#555;
+}
+
+.input{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    border-radius: 4px;
+}
+
+.input input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.input button{
+    width: max(10vw,150px);
+    padding:12px 5px;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width:750px){
+    .cart{
+        margin:0px;
+    }
+
+    .cartbottom{
+        flex-direction: column-reverse;
+
+    }
+
+    .promo{
+        
+        justify-content: end;
+      
+    }
+    .cartitem .cartitemstitle{
+        gap:5px;
+    }
+
+}
